@@ -1,4 +1,4 @@
-01. Descripción General del Proyecto
+# 01. Descripción General del Proyecto
 Sistema de Gestión de Productos y Ventas.
 Descripción del proyecto
 El proyecto consiste en el desarrollo de una aplicación de escritorio destinada a la administración de productos y la gestión de ventas de un comercio.

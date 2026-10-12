@@ -4,25 +4,27 @@
 
 ### Descripción del alcance
 
-El sistema permitirá gestionar productos, pedidos, ventas,
-pagos y envíos de una pizzería o negocio.
+El sistema permitirá gestionar productos y registrar ventas
+de una pizzería o negocio.
 
-También incluirá estadísticas comerciales, generación de
-comprobantes y administración de usuarios.
+También incluirá el registro de métodos de pago, costos de envío,
+generación de comprobantes, estadísticas comerciales
+y administración de usuarios.
 
 ---
 
 ### Funcionalidades incluidas
 
 - **Productos:** alta, baja, modificación, búsqueda y categorización.
-- **Ventas:** selección de productos, cantidades, método de pago
-  y destino del pedido. Cálculo automático del total y registro de la venta.
-- **Pagos:** efectivo o Mercado Pago, con cálculo del vuelto cuando corresponda.
-- **Envíos:** registro de la dirección de entrega y cálculo del costo
-  según la distancia y la tarifa por kilómetro.
+- **Ventas:** selección de productos y cantidades, cálculo automático
+  de importes y registro de la venta.
+- **Pagos:** selección del método de pago (efectivo o Mercado Pago)
+  mediante un desplegable para su registro y análisis estadístico.
+- **Envíos:** ingreso manual del costo de envío, que se sumará
+  automáticamente al total de la venta.
 - **Comprobantes:** generación de comprobantes internos de venta.
 - **Estadísticas:** productos más vendidos, ingresos, ventas por período
-  y métodos de pago.
+  y cantidad de ventas por método de pago.
 - **Usuarios:** inicio de sesión y permisos según el perfil.
 - **Base de datos:** almacenamiento de la información comercial en SQL Server.
 
@@ -32,14 +34,16 @@ comprobantes y administración de usuarios.
 
 **Administrador:**
 - Gestionar productos, precios, categorías y usuarios.
-- Configurar tarifas de envío.
 - Registrar y consultar ventas.
 - Acceder a estadísticas y reportes.
 
 **Usuario normal:**
 - Consultar productos.
-- Registrar pedidos, ventas y pagos.
-- Calcular envíos y generar comprobantes.
+- Seleccionar productos y cantidades.
+- Registrar ventas.
+- Seleccionar el método de pago.
+- Ingresar manualmente el costo de envío.
+- Generar comprobantes.
 
 ---
 
@@ -49,6 +53,7 @@ comprobantes y administración de usuarios.
 - Administración de proveedores y compras.
 - Facturación electrónica fiscal.
 - Procesamiento e integración de pagos electrónicos.
+- Cálculo automático de envíos por distancia.
 - Integración con plataformas de delivery.
 - Seguimiento de repartidores.
 - Gestión de múltiples sucursales.
@@ -62,7 +67,7 @@ comprobantes y administración de usuarios.
 - Base de datos SQL Server.
 - Arquitectura de tres capas.
 - Acceso según permisos de usuario.
-- Registro manual de pagos y distancias de envío.
+- Registro manual del método de pago y del costo de envío.
 - Comprobantes sin validez fiscal.
 
 ---
@@ -70,8 +75,9 @@ comprobantes y administración de usuarios.
 ### Aspectos pendientes
 
 - Seguimiento de estados de pedidos.
-- Registro de clientes.
+- Registro de clientes y direcciones de entrega.
 - Descuentos y promociones.
+- Cálculo automático del vuelto.
 - Pagos combinados.
 - Cancelación o modificación de ventas.
 - Impresión o exportación de comprobantes.
@@ -80,4 +86,10 @@ comprobantes y administración de usuarios.
 
 ---
 
-**Estado:** En desarrollo.
+**Proyecto:** Sistema de Gestión de Productos y Ventas
+
+**Documento:** Alcance del Sistema
+
+**Estado del proyecto:** En desarrollo
+
+**Estado del documento:** Borrador

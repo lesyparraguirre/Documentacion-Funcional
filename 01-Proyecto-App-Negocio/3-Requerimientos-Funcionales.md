@@ -5,8 +5,8 @@
 ### 1. Objetivo
 
 Definir las funcionalidades que deberá cumplir el sistema
-para gestionar productos, ventas, pagos, envíos y usuarios
-de una pizzería o comercio.
+para gestionar productos, ventas, métodos de pago, costos de envío
+y usuarios de una pizzería o comercio.
 
 ---
 
@@ -35,46 +35,48 @@ de una pizzería o comercio.
 | ID | Requerimiento | Descripción |
 |---|---|---|
 | RF-009 | Selección de productos | Agregar productos y cantidades a una venta. |
-| RF-010 | Cálculo de importes | Calcular subtotales y total automáticamente. |
-| RF-011 | Registro de ventas | Guardar productos, cantidades, pago, envío e importe total. |
-| RF-012 | Historial de ventas | Consultar las operaciones registradas. |
+| RF-010 | Cálculo de importes | Calcular automáticamente subtotales y total, incluyendo el costo de envío. |
+| RF-011 | Registro de ventas | Guardar productos, cantidades, método de pago, costo de envío e importe total. |
+| RF-012 | Historial de ventas | Permitir al administrador consultar las operaciones registradas. |
 
 #### 2.4. Métodos de pago
 
 | ID | Requerimiento | Descripción |
 |---|---|---|
-| RF-013 | Pago en efectivo | Registrar el importe recibido y calcular el vuelto. |
-| RF-014 | Mercado Pago | Registrar el pago por el importe exacto, sin integración externa. |
+| RF-013 | Selección del método de pago | Permitir seleccionar Efectivo o Mercado Pago mediante un desplegable. |
+| RF-014 | Registro del método de pago | Guardar el método seleccionado junto con la venta, sin procesar pagos electrónicos. |
 
 #### 2.5. Gestión de envíos
 
 | ID | Requerimiento | Descripción |
 |---|---|---|
-| RF-015 | Tarifa de envío | Permitir al administrador configurar el precio por kilómetro. |
-| RF-016 | Cálculo de envío | Registrar dirección y kilómetros, calcular el costo y sumarlo al total. |
+| RF-015 | Ingreso del costo de envío | Permitir ingresar manualmente el importe del envío. |
+| RF-016 | Incorporación del envío | Sumar automáticamente el costo de envío al total de la venta. |
 
 #### 2.6. Comprobantes
 
 | ID | Requerimiento | Descripción |
 |---|---|---|
-| RF-017 | Generación de comprobantes | Generar un comprobante interno con productos, cantidades, precios, envío, pago y total. |
+| RF-017 | Generación de comprobantes | Generar un comprobante interno con productos, cantidades, precios, envío, método de pago y total. |
 
 #### 2.7. Estadísticas comerciales
 
 | ID | Requerimiento | Descripción |
 |---|---|---|
-| RF-018 | Productos más vendidos | Mostrar los productos con mayor cantidad de ventas. |
-| RF-019 | Ingresos | Consultar los ingresos registrados. |
+| RF-018 | Productos más vendidos | Mostrar los productos con mayor cantidad de unidades vendidas. |
+| RF-019 | Ingresos | Consultar los ingresos registrados por ventas. |
 | RF-020 | Ventas por período | Consultar cantidad de ventas e importes por fechas. |
-| RF-021 | Métodos de pago | Mostrar cantidad de ventas e importes por método de pago. |
+| RF-021 | Métodos de pago | Mostrar cantidad de ventas e importes agrupados por método de pago. |
 
 ---
 
 ### 3. Reglas generales
 
 - El administrador tendrá acceso a todas las funcionalidades.
-- El usuario normal podrá registrar ventas, pagos y envíos.
-- Los pagos se registrarán manualmente.
+- El usuario normal podrá consultar productos y registrar ventas.
+- El método de pago se seleccionará manualmente.
+- El costo de envío se ingresará manualmente.
+- El sistema calculará automáticamente los importes de la venta.
 - Los comprobantes no tendrán validez fiscal.
 - Los datos se almacenarán en SQL Server.
 - Las estadísticas estarán disponibles para el administrador.
@@ -84,12 +86,15 @@ de una pizzería o comercio.
 ### 4. Funcionalidades pendientes de definición
 
 - Estados de pedidos.
-- Registro de clientes.
+- Registro de clientes y direcciones de entrega.
 - Descuentos y promociones.
+- Cálculo del vuelto en efectivo.
 - Pagos combinados.
-- Cancelación de ventas.
+- Cancelación o modificación de ventas.
+- Impresión o exportación de comprobantes.
 - Control de stock.
 - Variantes de productos.
+- Condiciones para confirmar una venta.
 
 ---
 

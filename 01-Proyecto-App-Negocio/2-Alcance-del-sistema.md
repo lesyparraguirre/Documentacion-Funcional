@@ -15,9 +15,11 @@ comprobantes y administración de usuarios.
 ### Funcionalidades incluidas
 
 - **Productos:** alta, baja, modificación, búsqueda y categorización.
-- **Ventas:** registro de pedidos, cálculo de totales e historial de ventas.
-- **Pagos:** registro de efectivo y Mercado Pago, con cálculo de vuelto.
-- **Envíos:** cálculo del costo según distancia y tarifa por kilómetro.
+- **Ventas:** selección de productos, cantidades, método de pago
+  y destino del pedido. Cálculo automático del total y registro de la venta.
+- **Pagos:** efectivo o Mercado Pago, con cálculo del vuelto cuando corresponda.
+- **Envíos:** registro de la dirección de entrega y cálculo del costo
+  según la distancia y la tarifa por kilómetro.
 - **Comprobantes:** generación de comprobantes internos de venta.
 - **Estadísticas:** productos más vendidos, ingresos, ventas por período
   y métodos de pago.

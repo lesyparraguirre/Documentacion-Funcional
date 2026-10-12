@@ -2,7 +2,7 @@
 
 ## Sistema de Gestión de Productos y Ventas para una Pizzería o Negocio
 
-### 1. Descripción del alcance
+### Descripción del alcance
 
 El sistema permitirá gestionar productos, pedidos, ventas,
 pagos y envíos de una pizzería o negocio.
@@ -12,7 +12,7 @@ comprobantes y administración de usuarios.
 
 ---
 
-### 2. Funcionalidades incluidas
+### Funcionalidades incluidas
 
 - **Productos:** alta, baja, modificación, búsqueda y categorización.
 - **Ventas:** registro de pedidos, cálculo de totales e historial de ventas.
@@ -26,7 +26,7 @@ comprobantes y administración de usuarios.
 
 ---
 
-### 3. Perfiles de usuario
+### Perfiles de usuario
 
 **Administrador:**
 - Gestionar productos, precios, categorías y usuarios.
@@ -41,7 +41,7 @@ comprobantes y administración de usuarios.
 
 ---
 
-### 4. Funcionalidades excluidas
+### Funcionalidades excluidas
 
 - Gestión de materias primas, ingredientes y recetas.
 - Administración de proveedores y compras.
@@ -54,7 +54,7 @@ comprobantes y administración de usuarios.
 
 ---
 
-### 5. Restricciones
+### Restricciones
 
 - Aplicación de escritorio desarrollada en C# y Windows Forms.
 - Base de datos SQL Server.
@@ -65,7 +65,7 @@ comprobantes y administración de usuarios.
 
 ---
 
-### 6. Aspectos pendientes
+### Aspectos pendientes
 
 - Seguimiento de estados de pedidos.
 - Registro de clientes.

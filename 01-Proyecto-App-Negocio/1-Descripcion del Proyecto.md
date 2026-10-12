@@ -1,6 +1,6 @@
 # 01. Descripción General del Proyecto
 
-## Sistema de Gestión de Productos y Ventas para una Pizzería
+## Sistema de Gestión de Productos y Ventas para una Pizzería o Negocio
 
 ### Descripción del proyecto
 

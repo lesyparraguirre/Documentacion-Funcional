@@ -18,11 +18,9 @@ funcionalidades correspondientes a mi perfil.
 
 ---
 
-#### HU-002: Registrar productos
+#### 2-Registrar productos
 
 **Usuario:** Administrador.
-
-**Prioridad:** Alta.
 
 **Historia:**
 
@@ -37,25 +35,37 @@ para mantener actualizado el catálogo.
 - Guardar el producto en la base de datos.
 
 ---
-
-### 3. Plantilla para nuevas historias
-
-#### HU-XXX: Nombre de la historia
+#### 3-Consultar Productos
 
 **Usuario:** Administrador / Usuario normal.
 
-**Prioridad:** Alta / Media / Baja.
-
 **Historia:**
 
-Como [tipo de usuario], quiero [funcionalidad]
-para [beneficio esperado].
+Como usuario, quiero consultar productos
+para obtener informacion.
 
 **Criterios de aceptación:**
 
-- [Condición que debe cumplir el sistema].
-- [Resultado esperado].
-- [Validación necesaria].
+- Permitir ingresar los datos del producto.
+- validar los datos ingresados.
+- Buscar el producto en la base de datos.
+
+---
+#### 3-Registrar una venta
+
+**Usuario:** Administrador / Usuario normal.
+
+**Historia:**
+
+Como usuario, quiero registrar una venta con su 
+respectivo producto, cantidad, tipo de envio, tipo de pago.
+para su respectivo registro
+
+**Criterios de aceptación:**
+
+- Permitir ingresar los datos de la venta.
+- validar los campos ingresados.
+- guardar la venta en la base de datos.
 
 ---
 
